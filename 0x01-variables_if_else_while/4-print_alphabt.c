@@ -1,26 +1,21 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Description: print all aplhabet letters except q and e
+ * main - Prints the alphabet.
  *
  * Return: Always 0 (Success)
-*/
-
+ */
 int main(void)
 {
-	char x = 'a';
+	char alp[24] = "abcdfghijklmnoprstuvwxyz";
+	int i;
 
-	while (x <= 'z')
+	for (i = 0; i < 24; i++)
 	{
-		if (x == 'e' && x == 'q')
-			x++;
-		putchar(x);
-		x++;
+		putchar(alp[i]);
 	}
 	putchar('\n');
-
 	return (0);
 }
+
 
